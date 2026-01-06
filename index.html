@@ -1,21 +1,32 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio de Rhogell Almonte</title>
+    <title>Rhogell Almonte - IT Portfolio</title>
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 20px; background-color: #f4f4f4; color: #333; }
-        .container { max-width: 800px; margin: auto; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        h1, h2 { color: #0366d6; }
-        h1 { text-align: center; border-bottom: 2px solid #f4f4f4; padding-bottom: 20px; }
-        .proyecto { margin-bottom: 30px; border-left: 3px solid #0366d6; padding-left: 15px; }
-        .proyecto img { max-width: 100%; border-radius: 5px; }
-        a { color: #0366d6; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        .btn { display: inline-block; background: #0366d6; color: #fff; padding: 10px 20px; border-radius: 5px; margin-top: 10px; }
-        .contacto img { max-width: 250px; }
-        footer { text-align: center; margin-top: 30px; color: #777; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 0; padding: 0; background-color: #f0f2f5; color: #333; }
+        .container { max-width: 900px; margin: 40px auto; background: #fff; padding: 40px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        h1, h2, h3 { color: #2c3e50; }
+        h1 { text-align: center; border-bottom: 3px solid #3498db; padding-bottom: 20px; margin-bottom: 20px; }
+        .intro { text-align: center; margin-bottom: 40px; font-size: 1.1em; color: #555; }
+        
+        /* Badges para Skills */
+        .skills-container { text-align: center; margin-bottom: 30px; }
+        .skill-badge { display: inline-block; background: #e8f4f8; color: #2980b9; padding: 5px 15px; border-radius: 20px; font-size: 0.9em; font-weight: bold; margin: 5px; border: 1px solid #bce0fd; }
+
+        .proyecto { margin-bottom: 40px; border-left: 5px solid #3498db; padding-left: 20px; background-color: #fafafa; padding: 20px; border-radius: 0 8px 8px 0; }
+        .proyecto h3 { margin-top: 0; color: #2980b9; }
+        .proyecto img { max-width: 100%; border-radius: 5px; margin-top: 15px; border: 1px solid #ddd; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        
+        a { color: #3498db; text-decoration: none; font-weight: bold; }
+        a:hover { text-decoration: underline; color: #1d6fa5; }
+        
+        .btn { display: inline-block; background: #3498db; color: #fff; padding: 12px 25px; border-radius: 5px; margin-top: 15px; text-decoration: none; transition: background 0.3s; }
+        .btn:hover { background: #2980b9; text-decoration: none; }
+        
+        .contacto { text-align: center; background-color: #f9f9f9; padding: 30px; border-radius: 8px; margin-top: 40px; }
+        footer { text-align: center; margin-top: 40px; color: #999; font-size: 0.9em; }
     </style>
 </head>
 <body>
@@ -23,50 +34,71 @@
     <div class="container">
         <header>
             <h1>Rhogell Almonte</h1>
-            <p>
-                ¡Hola! Soy Rhogell Almonte, un apasionado por la tecnología y estudiante de ciberseguridad. Mi experiencia profesional incluye el rol de <strong>IT Technician</strong>, donde fui responsable de la administración de sistemas y redes. Mis proyectos académicos y personales abarcan desde la configuración basica de redes con <strong>Cisco Packet Tracer</strong> hasta el desarrollo de software con lenguajes como <strong>C, Javascript, HTML y CSS</strong>.
+            <p class="intro">
+                <strong>Bilingual IT Support Specialist | Linux Administrator | Cybersecurity Student</strong><br><br>
+                Tech-savvy professional with hands-on experience in IT Operations, Network Administration, and Incident Management. 
+                Currently managing technical support for a high-volume Call Center environment. Passionate about automation, infrastructure security, and open-source technologies.
             </p>
-            <a href="https://www.linkedin.com/in/rhogell-nazir-almonte-rodriguez-160846382/" target="_blank" class="btn">Mi Perfil de LinkedIn</a>
+            
+            <div class="skills-container">
+                <span class="skill-badge">English C1 (Advanced)</span>
+                <span class="skill-badge">Linux (Ubuntu)</span>
+                <span class="skill-badge">Python Scripting</span>
+                <span class="skill-badge">Network Troubleshooting</span>
+                <span class="skill-badge">IT Support Tier 2</span>
+            </div>
+
+            <div style="text-align: center;">
+                <a href="https://www.linkedin.com/in/rhogell-nazir-almonte-rodriguez-160846382/" target="_blank" class="btn">View LinkedIn Profile</a>
+            </div>
         </header>
 
-        <hr>
+        <hr style="margin: 40px 0; border: 0; border-top: 1px solid #eee;">
 
         <main>
-            <h2>📁 Portafolio de Proyectos</h2>
+            <h2>📁 Technical Projects Portfolio</h2>
             
             <div class="proyecto">
-                <h3>Proyecto 1: Examen HTML</h3>
-                <p>Esta es una breve descripción de mi asignación "examen.html". En este proyecto apliqué conceptos de estructura y semántica de HTML.</p>
-                <img src="Examen.png" alt="Captura de pantalla del proyecto Examen">
+                <h3>Project 1: Linux Server Implementation for IT Ops</h3>
+                <p>
+                    Deployed and configured a <strong>Linux Ubuntu Server</strong> to centralize operations within a Call Center environment. 
+                    This project involved setting up SSH access, user permission management, and hosting maintenance scripts used by the support team.
+                    The implementation improved the team's efficiency in deploying patches and monitoring network status.
+                </p>
+                <img src="linux-server.png" alt="Linux Server Terminal and Configuration">
             </div>
 
             <div class="proyecto">
-                <h3>Proyecto 2: Olimpiadas HTML</h3>
-                <p>Aquí muestro mi trabajo en la asignación "Olimpiadas.html". Fue un ejercicio práctico para utilizar diferentes etiquetas y estilos básicos.</p>
-                <img src="olimpiadas.png" alt="Captura de pantalla del proyecto Olimpiadas">
+                <h3>Project 2: Automated Network Health Checker (Python)</h3>
+                <p>
+                    Developed a <strong>Python automation script</strong> using <code>socket</code> and <code>os</code> libraries to monitor connectivity of critical network nodes.
+                    The tool automatically pings servers and logs response times, alerting the team of any downtime anomalies before they impact operations.
+                </p>
+                <img src="python-script.png" alt="Python Automation Script Code">
             </div>
 
-             <div class="proyecto">
-                <h3>Proyecto 3: Red en Cisco Packet Tracer</h3>
-                <p>Aquí muestro mi trabajo con una practica en la cual configuramos una red completa con servidor DNS y DHCP en Packet Tracer.</p>
-                <img src="Rhogell Almonte.png" alt="Packet Tracer">
+            <div class="proyecto">
+                <h3>Project 3: Enterprise Network Infrastructure Design</h3>
+                <p>
+                    Designed and simulated a comprehensive corporate network using <strong>Cisco Packet Tracer</strong>. 
+                    Configuration included VLAN segmentation, DHCP/DNS Server setup, and routing protocols to ensure security and efficient traffic flow across departments.
+                </p>
+                <img src="packet-tracer.png" alt="Cisco Packet Tracer Network Topology">
             </div>
 
         </main>
 
-        <hr>
-
         <section class="contacto">
-            <h2>📞 Contacto y CV</h2>
-            <p>Puedes descargar mi currículum vitae actualizado en el siguiente enlace:</p>
-            <a href="https://drive.google.com/file/d/1OtxEhomNwOznj-58NikSP8-x0ThvCaPO/view?usp=sharing" target="_blank" class="btn">Ver o Descargar mi CV</a>
+            <h2>📞 Contact & Resume</h2>
+            <p>Ready to bring technical expertise and bilingual support to your team.</p>
             
-            <p style="margin-top: 20px;">Para contactarme, puedes escribirme a mi correo electrónico:</p>
-            <img src="Correo.png" alt="Correo electrónico de Rhogell Almonte">
+            <a href="https://drive.google.com/file/d/TU_LINK_DEL_CV_EN_INGLES" target="_blank" class="btn">Download My Resume (PDF)</a>
+            
+            <p style="margin-top: 20px; font-weight: bold;">📧 rhogell.almonte@email.com</p>
         </section>
 
         <footer>
-            <p>Portafolio creado con GitHub Pages.</p>
+            <p>&copy; 2026 Rhogell Almonte. Hosted on GitHub Pages.</p>
         </footer>
 
     </div>
